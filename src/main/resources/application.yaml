@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: art_connect
+    password: art_connect
+    url: jdbc:mysql://localhost:3306/art_connect
+    
+    jpa:
+      properties:
+         hibernate:
+           format_sql: true
+           use_sql_comments: true
+    
+    
+      hibernate:
+         ddl-auto: create
+      show-sql: true
+      defer-datasource-initialization: true
+   
+    sql:
+      init:
+         mode: always
+        
